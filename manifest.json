@@ -1,18 +1,15 @@
 {
   "manifest_version": 2,
-
-  "name": "Getting started example",
-  "description": "This extension shows a Google Image search result for the current page",
+  "name": "Web Extensions lastError checker",
+  "description": "This extension checks the lastError feature availability in FF",
   "version": "1.0",
-
+  "applications": {
+    "gecko": {
+      "id": "webext-feature-checker@avira.com"
+    }
+  },
   "browser_action": {
     "default_icon": "48.png",
     "default_popup": "popup.html"
-  },
-  "background": [
-    "background.js"
-  ],
-  "permissions": [
-    "activeTab"
-  ]
+  }
 }
