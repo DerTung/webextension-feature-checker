@@ -8,8 +8,11 @@
       "id": "webext-feature-checker@avira.com"
     }
   },
-  "browser_action": {
-    "default_icon": "48.png",
-    "default_popup": "popup.html"
-  }
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "js": ["content.js"]
+  }],
+  "permissions": [
+    "*://*/*"
+  ]
 }
